@@ -1,0 +1,365 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
+     :root {
+        font-family: Montserrat, sans-serif;
+        --text-color: #333333;
+        --link-color: #44B749;
+        --button-color: #66CC33;
+        font-size: 16px;
+        line-height: 1.5;
+        scroll-behavior: smooth;
+    }
+    
+    h1,
+    h2,
+    h3,
+    p {
+        font-family: Montserrat, sans-serif;
+    }
+    
+    section {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .wrap {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    
+    .menu,
+    .logo img {
+        display: none;
+    }
+    
+    .logo,
+    .menu {
+        padding: 20px 20px;
+    }
+    
+    .logo p {
+        color: var(--link-color);
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--text-color);
+        text-transform: uppercase;
+    }
+    
+    .menu a:hover {
+        color: var(--link-color);
+        text-decoration: underline;
+    }
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+    
+    .banner {
+        background-image: url(../images/title-background-food.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .banner button:hover {
+        background-color: var(--link-color);
+        transition-duration: 2s;
+    }
+    
+    h1 {
+        font-size: 40px;
+        width: 50%;
+        line-height: 1.2;
+        color: var(--text-color);
+    }
+    
+    h2 {
+        font-size: 25px;
+        line-height: 1.2;
+        color: var(--text-color);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--link-color);
+    }
+    
+    button {
+        width: 153px;
+        height: 57px;
+        background-color: var(--button-color);
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: normal;
+        border: none;
+        font-family: Montserrat, sans-serif;
+    }
+    
+    .smachno-vdoma img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .smachno-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .description-smak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .delivery-steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .our-formats {
+        background-image: url(../images/section-background-image.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .work-format img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .work-format p {
+        font-weight: bold;
+    }
+    
+    .care-healthy {
+        background-image: url(../images/care-healthy.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .care-healthy h2 {
+        color: white;
+        margin-bottom: 35px;
+    }
+    
+    .care-healthy button {
+        background-color: white;
+        color: var(--button-color);
+    }
+    
+    .care-healthy button:hover {
+        background-color: var(--link-color);
+        color: white;
+        transition-duration: 2s;
+    }
+    
+    .healthy-culture {
+        background-image: url(../images/section-background-image.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .healthy-culture img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    span {
+        color: var(--link-color);
+        font-weight: bold;
+    }
+    
+    .facts-about-us {
+        text-align: center;
+    }
+    
+    .our-service {
+        background-image: url(../images/section-background-image.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .list-service {
+        background-color: white;
+        padding: 25px 25px;
+        margin-bottom: 25px;
+    }
+    
+    .trust {
+        text-align: center;
+    }
+    
+    .companies-name img {
+        margin: 15px 15px;
+    }
+    
+    .map {
+        text-align: center;
+        background-image: url(../images/section-background-image.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .map iframe {
+        border: 0;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .contact {
+        text-align: center;
+        background-image: url(../images/quick-delivery.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .contact p,
+    .contact h2,
+    .contact h3,
+    .contact a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .contact a:hover {
+        text-decoration: underline;
+    }
+    
+    @media (min-width: 650px) {
+        h1 {
+            font-size: 50px;
+        }
+        .logo {
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            display: flex;
+            margin-right: 15px;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+        }
+        .smachno-about {
+            flex-direction: row;
+        }
+        .description-smak {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .work-format {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .work-format img {
+            width: 120px;
+            height: 120px;
+        }
+        .companies-name {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .map iframe {
+            width: 500px;
+        }
+    }
+    
+    @media (min-width: 950px) {
+        h1 {
+            font-size: 60px;
+        }
+        .menu {
+            width: 70%;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 16px;
+        }
+        .work-format img {
+            width: 200px;
+            height: 200px;
+        }
+        .describtion-delivery {
+            display: flex;
+            flex-direction: row;
+        }
+        .delivery-steps {
+            width: 25%;
+        }
+        .healthy-culture {
+            display: flex;
+            flex-direction: row;
+        }
+        .facts-about-us {
+            display: flex;
+            flex-direction: row;
+        }
+        .service {
+            display: flex;
+            flex-direction: row;
+        }
+        .list-service {
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: white;
+            width: 25%;
+        }
+        .map iframe {
+            width: 800px;
+        }
+    }
