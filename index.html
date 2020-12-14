@@ -30,7 +30,7 @@
             <section>
                 <div class="container banner">
                     <h1>Ваша найкраща доставка їжі</h1>
-                    <button>Замовити</button>
+                    <a href="#order"><button>Замовити</button></a>
                 </div>
             </section>
             <section>
@@ -46,7 +46,7 @@
             </section>
             <section id="delivery">
                 <div>
-                    <h2>Як працює доставка.</h2>
+                    <h2>Як працює доставка</h2>
                 </div>
                 <div class="container describtion-delivery">
                     <div class="delivery-steps">
@@ -99,8 +99,8 @@
                 </div>
             </section>
             <section class="container care-healthy">
-                <h2>Подбайте про свою команду!<br>Замовляйте смачні та корисні страви.</h2>
-                <button>Замовити</button>
+                <h2>Подбайте про свою команду!<br>Замовляйте смачні та корисні страви!</h2>
+                <a href="#order"><button>Замовити</button></a>
             </section>
             <section>
                 <div class="container healthy-culture">
@@ -196,30 +196,34 @@
                     </div>
                 </div>
             </section>
-            <section class="order">
-                <div class="container">
+            <section id="order">
+                <div class="container zakaz">
                     <h2>Вже готові замовити у нас? </h2>
                     <p>Замовляйте або ставте нам питання, ми з радістю відповімо!</p>
-                    <div>
-                        <form action="https://formspree.io/f/xaylpwjj" method="POST">
-                            <label>Ваше ім'я:
-                                <input type="text" name="user-name" placeholder="Ваше ім'я" required>
-                            </label>
-                            <label>Ваш номер телефону:
-                                <input type="text" name="user-phone" placeholder="Ваш номер телефону" required>
-                            </label>
-                            <label>Ваш email:
-                                <input type="email" name="user-email" placeholder="Ваш email" required>
-                            </label>
-                            <input type="submit">
-                        </form>
-                    </div>
+
+                    <form action="https://formspree.io/f/xaylpwjj" method="POST">
+                        <div class="form-order">
+                            <div class="input-info">
+                                <div><input type="text" name="user-name" placeholder="Ваше ім'я" required></div>
+                                <div><input type="text" name="user-phone" placeholder="Ваш номер телефону" required></div>
+                                <div><input type="email" name="user-email" placeholder="Ваш email" required></div>
+                            </div>
+                            <div><button>Вiдправити</button></div>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>
 
         <footer>
-
+            <div class="container menu-footer">
+                <a href="#delivery">Доставка </a>
+                <a href="#formats">Формати </a>
+                <a href="#menu">Меню </a>
+                <a href="#companies">Клієнти </a>
+                <a href="#location">Локація </a>
+                <a href="#contacts">Контакти </a>
+            </div>
         </footer>
     </div>
 
