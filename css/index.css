@@ -1,6 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
      :root {
-        font-family: Montserrat, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         --text-color: #333333;
         --link-color: #44B749;
         --button-color: #66CC33;
@@ -13,7 +13,14 @@
     h2,
     h3,
     p {
-        font-family: Montserrat, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    hr {
+        background-color: var(--link-color);
+        width: 60px;
+        height: 3px;
+        border: none;
     }
     
     section {
@@ -69,19 +76,25 @@
         color: var(--text-color);
         font-size: 13px;
         font-weight: bold;
+        transition: 0.5s;
     }
     
     .menu a:hover {
         color: var(--link-color);
-        text-decoration: underline;
     }
     
     .logo .icons {
         display: flex;
     }
     
-    .icons img {
+    .icons i {
         margin-left: 5px;
+        transition: 0.5s;
+        color: var(--button-color);
+    }
+    
+    .icons i:hover {
+        color: #FABB16;
     }
     
     .banner {
@@ -97,7 +110,6 @@
     
     .banner button:hover {
         background-color: var(--link-color);
-        transition-duration: 2s;
     }
     
     h1 {
@@ -112,7 +124,6 @@
         line-height: 1.2;
         color: var(--text-color);
         text-align: center;
-        margin-bottom: 30px;
     }
     
     h3 {
@@ -132,6 +143,7 @@
         letter-spacing: normal;
         border: none;
         font-family: Montserrat, sans-serif;
+        transition: 1s;
     }
     
     .smachno-vdoma img {
@@ -194,18 +206,17 @@
     
     .care-healthy h2 {
         color: white;
-        margin-bottom: 35px;
     }
     
     .care-healthy button {
         background-color: white;
         color: var(--button-color);
+        transition: 1s;
     }
     
     .care-healthy button:hover {
         background-color: var(--link-color);
         color: white;
-        transition-duration: 2s;
     }
     
     .healthy-culture {
@@ -282,6 +293,11 @@
         text-decoration: none;
     }
     
+    .contact i {
+        color: white;
+        margin-right: 10px;
+    }
+    
     .contact a:hover {
         text-decoration: underline;
     }
@@ -301,6 +317,17 @@
         padding-left: 15px;
     }
     
+    .input-info textarea {
+        border-width: 0;
+        background-color: #F2F3F4;
+        width: 200px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-family: monospace;
+        padding-left: 15px;
+    }
+    
     .zakaz p {
         text-align: center;
         margin-bottom: 20px;
@@ -312,12 +339,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        max-height: 450px;
+        max-height: 550px;
     }
     
     .form-order button:hover {
         background-color: var(--link-color);
-        transition-duration: 2s;
     }
     
     .menu-footer {
@@ -340,36 +366,50 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-left: 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
     
-    .carousel-trio {
+    .menu-footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .carousel-trio,
+    .canteens {
         text-align: center;
     }
     
-    .carousel-buttons {
+    .carousel-buttons,
+    .canteen-buttons {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
     
     .prev,
-    .next {
-        margin: 20px 20px;
-        width: 110px;
-        height: 30px;
+    .next,
+    .canteen-prev,
+    .canteen-next {
+        width: 100px;
+        height: 20px;
+        margin: 10px 10px;
+        font-size: 8px;
     }
     
     .prev:hover,
-    .next:hover {
+    .next:hover,
+    .canteen-prev:hover,
+    .canteen-next:hover {
         background-color: var(--link-color);
-        transition-duration: 2s;
     }
     
     .carousel-trio .img1,
     .img2,
     .img3,
-    .img4 {
+    .img4,
+    .canteen-img1,
+    .canteen-img2,
+    .canteen-img3,
+    .canteen-img4 {
         margin-right: 5px;
         max-width: 300px;
         max-height: 300px;
@@ -377,14 +417,12 @@
     
     .carousel-trio .img2,
     .img3,
-    .img4 {
+    .img4,
+    .canteen-img2,
+    .canteen-img3,
+    .canteen-img4 {
         margin-right: 5px;
         display: none;
-    }
-    
-    .prev,
-    .next {
-        font-size: 12px;
     }
     
     @media (min-width: 650px) {
@@ -429,10 +467,17 @@
         .input-info input {
             width: 500px;
         }
+        .input-info textarea {
+            width: 500px;
+        }
         .carousel-trio .img1,
         .img2,
         .img3,
-        .img4 {
+        .img4,
+        .canteen-img1,
+        .canteen-img2,
+        .canteen-img3,
+        .canteen-img4 {
             max-width: 400px;
             max-height: 400px;
         }
@@ -447,13 +492,10 @@
         }
         .menu {
             text-transform: uppercase;
-            padding-bottom: 27px;
+            padding-bottom: 18px;
         }
         .menu a {
             font-size: 18px;
-        }
-        .logo p {
-            font-size: 35px;
         }
         .work-format img {
             width: 200px;
@@ -491,7 +533,10 @@
         }
         .carousel-trio .img2,
         .img3,
-        .img4 {
+        .img4,
+        .canteen-img2,
+        .canteen-img3,
+        .canteen-img4 {
             margin-right: 5px;
             display: inline;
         }
@@ -501,7 +546,11 @@
         .carousel-trio .img1,
         .img2,
         .img3,
-        .img4 {
+        .img4,
+        .canteen-img1,
+        .canteen-img2,
+        .canteen-img3,
+        .canteen-img4 {
             max-width: 250px;
             max-height: 250px;
         }
