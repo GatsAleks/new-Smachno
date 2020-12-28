@@ -139,7 +139,6 @@
         line-height: 1.2;
         color: var(--text-color);
         text-align: center;
-        margin-bottom: 20px;
     }
     
     h3 {
@@ -167,7 +166,7 @@
         height: 300px;
     }
     .about-us h2 {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
     .smachno-about {
         display: flex;
