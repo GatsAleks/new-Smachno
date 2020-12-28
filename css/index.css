@@ -111,7 +111,22 @@
     .banner button:hover {
         background-color: var(--link-color);
     }
+
+    .banner-phone a,
+    .banner-phone i {
+        color: var(--text-color);
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 70px;
+        transition: 0.5s;
+        text-decoration: none;
+    }
     
+    .banner-phone a:hover,
+    .banner-phone i:hover {
+        color: var(--button-color);
+    }
+
     h1 {
         font-size: 40px;
         width: 50%;
@@ -150,7 +165,9 @@
         width: 300px;
         height: 300px;
     }
-    
+    .about-us h2 {
+        margin-bottom: 15px;
+    }
     .smachno-about {
         display: flex;
         flex-direction: column;
@@ -437,6 +454,10 @@
             flex-direction: row;
             justify-content: space-around;
             padding-bottom: 20px;
+        }
+        .banner-phone a,
+        .banner-phone i {
+            font-size: 40px;
         }
         .smachno-about {
             flex-direction: row;
