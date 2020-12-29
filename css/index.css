@@ -594,6 +594,11 @@ footer i {
         display: flex;
         flex-direction: row;
     }
+    .companies-name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     .list-service {
         margin-left: 10px;
         margin-right: 10px;

@@ -29,7 +29,9 @@
 
     function showNext() {
         currentIdx++;
-        if (currentIdx >= images.length) currentIdx = 0;
+        if (currentIdx >= images.length) {
+            currentIdx = 0;
+        }
         showCurrent();
     }
 
