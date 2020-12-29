@@ -12,7 +12,7 @@
         'images/canteens_photo/tenth_photo.jpg'
     ]
 
-    let currentIdx = 0;
+    var currentIdx = 0;
 
     function showCurrent() {
         const imgElement1 = document.querySelector('.canteens .canteen-img1');
