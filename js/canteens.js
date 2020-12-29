@@ -12,16 +12,16 @@
         'images/canteens_photo/tenth_photo.jpg'
     ]
 
-    const currentIdx = 0;
+    let currentIdx = 0;
 
-    function showCurrent(currentIdx) {
-        const imgElement1 = document.querySelector('.canteens .canteen-img1');
-        const imgElement2 = document.querySelector('.canteens .canteen-img2');
-        const imgElement3 = document.querySelector('.canteens .canteen-img3');
-        const imgElement4 = document.querySelector('.canteens .canteen-img4');
-        const idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx + 1;
-        const idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
-        const idx4 = idx3 + 1 >= images.length ? 0 : idx3 + 1;
+    function showCurrent() {
+        let imgElement1 = document.querySelector('.canteens .canteen-img1');
+        let imgElement2 = document.querySelector('.canteens .canteen-img2');
+        let imgElement3 = document.querySelector('.canteens .canteen-img3');
+        let imgElement4 = document.querySelector('.canteens .canteen-img4');
+        let idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx + 1;
+        let idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
+        let idx4 = idx3 + 1 >= images.length ? 0 : idx3 + 1;
         // console.log(currentIdx, idx2, idx3, idx4);
         imgElement1.src = images[currentIdx];
         imgElement2.src = images[idx2];
@@ -29,13 +29,13 @@
         imgElement4.src = images[idx4];
     }
 
-    function showNext(currentIdx) {
+    function showNext() {
         currentIdx++;
         if (currentIdx >= images.length) currentIdx = 0;
         showCurrent();
     }
 
-    function showPrev(currentIdx) {
+    function showPrev() {
         currentIdx--;
         if (currentIdx < 0) currentIdx = images.length - 1;
         showCurrent();
