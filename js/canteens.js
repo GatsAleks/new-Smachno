@@ -22,7 +22,7 @@
         var idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx + 1;
         var idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
         var idx4 = idx3 + 1 >= images.length ? 0 : idx3 + 1;
-        
+
         imgElement1.src = images[currentIdx];
         imgElement2.src = images[idx2];
         imgElement3.src = images[idx3];
@@ -31,7 +31,10 @@
 
     function showNext() {
         currentIdx++;
-        if (currentIdx >= images.length) currentIdx = 0;
+        if (currentIdx >= images.length) {
+            currentIdx = 0;
+        }
+
         showCurrent();
     }
 
