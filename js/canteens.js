@@ -14,7 +14,7 @@
 
     var currentIdx_cant = 0;
 
-    function showCurrent() {
+    function showCurrentCant() {
         var imgElement_cant1 = document.querySelector('.canteens .canteen-img1');
         var imgElement_cant2 = document.querySelector('.canteens .canteen-img2');
         var imgElement_cant3 = document.querySelector('.canteens .canteen-img3');
@@ -29,23 +29,23 @@
         imgElement_cant4.src = images_cant[idx4_cant];
     }
 
-    function showNext() {
+    function showNextCant() {
         currentIdx_cant++;
         if (currentIdx_cant >= images_cant.length) {
             currentIdx_cant = 0;
         }
 
-        showCurrent();
+        showCurrentCant();
     }
 
-    function showPrev() {
+    function showPrevCant() {
         currentIdx_cant--;
         if (currentIdx_cant < 0) currentIdx_cant = images_cant.length - 1;
-        showCurrent();
+        showCurrentCant();
     }
 
-    setInterval(showNext, 3000);
-    document.querySelector('.canteens .canteen-next').addEventListener('click', showNext);
-    document.querySelector('.canteens .canteen-prev').addEventListener('click', showPrev);
-    showCurrent();
+    setInterval(showNextCant, 3000);
+    document.querySelector('.canteens .canteen-next').addEventListener('click', showNextCant);
+    document.querySelector('.canteens .canteen-prev').addEventListener('click', showPrevCant);
+    showCurrentCant();
 }
