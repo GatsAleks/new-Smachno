@@ -1,5 +1,5 @@
 {
-    const images = [
+    var images = [
         'images/canteens_photo/first_photo.jpg',
         'images/canteens_photo/second_photo.jpg',
         'images/canteens_photo/third_photo.jpg',
