@@ -202,8 +202,8 @@ button {
 }
 
 .work-format img {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
 }
 
 .work-format p {
@@ -284,20 +284,38 @@ span {
 
 .feedback {
     text-align: center;
-    background-image: url(../images/feedback.jpg);
+    background-image: url(../images/care-healthy.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
 
 .feedback span {
-font-size: 15px;
-color: var(--link-color);
-margin-left: 5px;
+    font-size: 15px;
+    color: white;
+    margin-left: 5px;
 }
+
+.feedback h2 {
+    color: white;
+}
+
 .feedback button {
-font-size: 12px;
-margin-top: 25px;
+    width: 170px;
+    font-size: 15px;
+    margin-top: 25px;
+    background-color: white;
+    color: #44B749;
+    border: 2px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.feedback button:hover {
+    background-color: var(--link-color);
+    color: white;
 }
 
 .map {
@@ -310,13 +328,13 @@ margin-top: 25px;
 
 .map iframe {
     border: 0;
-    width: 300px;
+    width: 270px;
     height: 300px;
 }
 
 .contact {
     text-align: center;
-    background-image: url(../images/quick-delivery.jpg);
+    background-image: url(../images/contacts.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -326,12 +344,12 @@ margin-top: 25px;
 .contact h2,
 .contact h3,
 .contact a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .contact i {
-    color: white;
+    color: var(--text-color);
     margin-right: 10px;
 }
 
@@ -363,6 +381,7 @@ margin-top: 25px;
     font-size: 13px;
     font-family: monospace;
     padding-left: 15px;
+    padding-top: 10px;
 }
 
 .zakaz p {
@@ -389,30 +408,32 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100px;
-    font-size: 16px;
+    text-align: center;
+    font-size: 14px;
     color: white;
     padding: 10px;
 }
 
 .menu-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .menu-footer a {
+    display: flex;
+    flex-direction: column;
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
-    margin-left: 20px;
 }
 
 .menu-footer a:hover {
     text-decoration: underline;
+}
+
+footer i {
+    font-size: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .carousel-trio,
@@ -433,7 +454,8 @@ footer {
 .canteen-next {
     width: 100px;
     height: 20px;
-    margin: 10px 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     font-size: 10px;
 }
 
@@ -453,8 +475,8 @@ footer {
 .canteen-img3,
 .canteen-img4 {
     margin-right: 5px;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 270px;
+    max-height: 270px;
 }
 
 .carousel-trio .img2,
@@ -526,6 +548,12 @@ footer {
     .canteen-img4 {
         max-width: 400px;
         max-height: 400px;
+    }
+    .menu-footer a {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 12px;
     }
 }
 
