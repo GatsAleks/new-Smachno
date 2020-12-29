@@ -12,9 +12,9 @@
         'images/canteens_photo/tenth_photo.jpg'
     ]
 
-    var currentIdx = 0;
+    const currentIdx = 0;
 
-    function showCurrent() {
+    function showCurrent(currentIdx) {
         const imgElement1 = document.querySelector('.canteens .canteen-img1');
         const imgElement2 = document.querySelector('.canteens .canteen-img2');
         const imgElement3 = document.querySelector('.canteens .canteen-img3');
@@ -29,13 +29,13 @@
         imgElement4.src = images[idx4];
     }
 
-    function showNext() {
+    function showNext(currentIdx) {
         currentIdx++;
         if (currentIdx >= images.length) currentIdx = 0;
         showCurrent();
     }
 
-    function showPrev() {
+    function showPrev(currentIdx) {
         currentIdx--;
         if (currentIdx < 0) currentIdx = images.length - 1;
         showCurrent();
