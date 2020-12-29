@@ -1,5 +1,5 @@
 {
-    var images = [
+    var images_cant = [
         'images/canteens_photo/first_photo.jpg',
         'images/canteens_photo/second_photo.jpg',
         'images/canteens_photo/third_photo.jpg',
@@ -12,35 +12,35 @@
         'images/canteens_photo/tenth_photo.jpg'
     ]
 
-    var currentIdx = 0;
+    var currentIdx_cant = 0;
 
     function showCurrent() {
-        var imgElement1 = document.querySelector('.canteens .canteen-img1');
-        var imgElement2 = document.querySelector('.canteens .canteen-img2');
-        var imgElement3 = document.querySelector('.canteens .canteen-img3');
-        var imgElement4 = document.querySelector('.canteens .canteen-img4');
-        var idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx + 1;
-        var idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
-        var idx4 = idx3 + 1 >= images.length ? 0 : idx3 + 1;
+        var imgElement_cant1 = document.querySelector('.canteens .canteen-img1');
+        var imgElement_cant2 = document.querySelector('.canteens .canteen-img2');
+        var imgElement_cant3 = document.querySelector('.canteens .canteen-img3');
+        var imgElement_cant4 = document.querySelector('.canteens .canteen-img4');
+        var idx2_cant = currentIdx_cant + 1 >= images_cant.length ? 0 : currentIdx_cant + 1;
+        var idx3_cant = idx2_cant + 1 >= images_cant.length ? 0 : idx2_cant + 1;
+        var idx4_cant = idx3_cant + 1 >= images_cant.length ? 0 : idx3_cant + 1;
 
-        imgElement1.src = images[currentIdx];
-        imgElement2.src = images[idx2];
-        imgElement3.src = images[idx3];
-        imgElement4.src = images[idx4];
+        imgElement_cant1.src = images_cant[currentIdx_cant];
+        imgElement_cant2.src = images_cant[idx2_cant];
+        imgElement_cant3.src = images_cant[idx3_cant];
+        imgElement_cant4.src = images_cant[idx4_cant];
     }
 
     function showNext() {
-        currentIdx++;
-        if (currentIdx >= images.length) {
-            currentIdx = 0;
+        currentIdx_cant++;
+        if (currentIdx_cant >= images_cant.length) {
+            currentIdx_cant = 0;
         }
 
         showCurrent();
     }
 
     function showPrev() {
-        currentIdx--;
-        if (currentIdx < 0) currentIdx = images.length - 1;
+        currentIdx_cant--;
+        if (currentIdx_cant < 0) currentIdx_cant = images_cant.length - 1;
         showCurrent();
     }
 
