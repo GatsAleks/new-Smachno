@@ -1,5 +1,5 @@
 {
-    const images = [
+    var images = [
         'images/menu/cezar.jpg',
         'images/menu/chicken.jpg',
         'images/menu/meat.jpg',
@@ -10,17 +10,17 @@
         'images/menu/vareniki-mashroom.jpg'
     ]
 
-    let currentIdx = 0;
+    var currentIdx = 0;
 
     function showCurrent() {
-        const imgElement1 = document.querySelector('.carousel-trio .img1');
-        const imgElement2 = document.querySelector('.carousel-trio .img2');
-        const imgElement3 = document.querySelector('.carousel-trio .img3');
-        const imgElement4 = document.querySelector('.carousel-trio .img4');
-        const idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx + 1;
-        const idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
-        const idx4 = idx3 + 1 >= images.length ? 0 : idx3 + 1;
-        // console.log(currentIdx, idx2, idx3, idx4);
+        var imgElement1 = document.querySelector('.carousel-trio .img1');
+        var imgElement2 = document.querySelector('.carousel-trio .img2');
+        var imgElement3 = document.querySelector('.carousel-trio .img3');
+        var imgElement4 = document.querySelector('.carousel-trio .img4');
+        var idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx + 1;
+        var idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
+        var idx4 = idx3 + 1 >= images.length ? 0 : idx3 + 1;
+       
         imgElement1.src = images[currentIdx];
         imgElement2.src = images[idx2];
         imgElement3.src = images[idx3];
